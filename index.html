@@ -230,50 +230,16 @@
             opacity: 1;
         }
 
-        /* Email box styling */
-        .email-box {
-            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-            border: 2px solid var(--primary-color);
-            border-radius: var(--radius-lg);
-            padding: 24px;
-            text-align: center;
-            margin-bottom: 24px;
-        }
-
-        .email-box .email-icon {
-            font-size: 48px;
-            color: var(--primary-color);
-            margin-bottom: 16px;
-        }
-
-        .email-box h3 {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 8px;
-            color: var(--text-primary);
-        }
-
-        .email-box a {
-            font-size: 16px;
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .email-box a:hover {
-            text-decoration: underline;
-        }
-
         /* Category specific icon colors */
         .websites .category-icon { color: #3b82f6; }
         .investment .category-icon { color: #10b981; }
         .social .category-icon { color: #8b5cf6; }
-        .content .category-icon { color: #f59e0b; }
-        .academic .category-icon { color: #06b6d4; }
+        .publishing .category-icon { color: #f59e0b; }
+        .community .category-icon { color: #06b6d4; }
+        .academic .category-icon { color: #ef4444; }
         .media .category-icon { color: #ec4899; }
         .podcast .category-icon { color: #f97316; }
-        .events .category-icon { color: #ef4444; }
-        .resources .category-icon { color: #84cc16; }
+        .events .category-icon { color: #84cc16; }
 
         /* Footer */
         .footer {
@@ -368,15 +334,6 @@
     <!-- Main Content -->
     <main class="main-content">
         <div class="container">
-            <!-- Email Contact -->
-            <div class="email-box">
-                <div class="email-icon">
-                    <i class="fas fa-envelope"></i>
-                </div>
-                <h3>Get in Touch</h3>
-                <a href="mailto:info@tavangarx.com">info@tavangarx.com</a>
-            </div>
-
             <div class="categories-grid">
                 
                 <!-- Core Websites -->
@@ -419,6 +376,11 @@
                                 <span class="link-text">Book a Meeting</span>
                                 <span class="link-url">tavangarx.com/call</span>
                             </a>
+                            <a href="mailto:info@tavangarx.com" class="link-item">
+                                <div class="link-icon"><i class="fas fa-envelope"></i></div>
+                                <span class="link-text">Email Contact</span>
+                                <span class="link-url">info@tavangarx.com</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -459,7 +421,7 @@
                                 <span class="link-url">signal.nfx.com</span>
                             </a>
                             <a href="https://angel.co/u/tavangarx" class="link-item" target="_blank">
-                                <div class="link-icon"><i class="fas fa-wing"></i></div>
+                                <div class="link-icon"><i class="fab fa-angellist"></i></div>
                                 <span class="link-text">AngelList</span>
                                 <span class="link-url">angel.co/u/tavangarx</span>
                             </a>
@@ -527,16 +489,21 @@
                                 <span class="link-text">TikTok</span>
                                 <span class="link-url">tiktok.com/@tavangar.x</span>
                             </a>
+                            <a href="https://xing.com/profile/MohammadHossein_Tavangar" class="link-item" target="_blank">
+                                <div class="link-icon"><i class="fab fa-xing"></i></div>
+                                <span class="link-text">Xing</span>
+                                <span class="link-url">xing.com</span>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Content & Publishing -->
+                <!-- Publishing & Writing -->
                 <div class="category">
                     <div class="category-header">
                         <h2 class="category-title">
-                            <span class="category-icon content"><i class="fas fa-pen-fancy"></i></span>
-                            Content & Publishing
+                            <span class="category-icon publishing"><i class="fas fa-pen-fancy"></i></span>
+                            Publishing & Writing
                         </h2>
                     </div>
                     <div class="links-container">
@@ -576,6 +543,25 @@
                                 <span class="link-text">Indie Hackers</span>
                                 <span class="link-url">indiehackers.com/tavangarx</span>
                             </a>
+                            <a href="https://slideshare.net/tavangarx" class="link-item" target="_blank">
+                                <div class="link-icon"><i class="fas fa-file-powerpoint"></i></div>
+                                <span class="link-text">SlideShare</span>
+                                <span class="link-url">slideshare.net/tavangarx</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Community & Discussion -->
+                <div class="category">
+                    <div class="category-header">
+                        <h2 class="category-title">
+                            <span class="category-icon community"><i class="fas fa-users"></i></span>
+                            Community & Discussion
+                        </h2>
+                    </div>
+                    <div class="links-container">
+                        <div class="links-grid">
                             <a href="https://quora.com/profile/Mohammad-Hossein-Tavangar" class="link-item" target="_blank">
                                 <div class="link-icon"><i class="fab fa-quora"></i></div>
                                 <span class="link-text">Quora</span>
@@ -587,7 +573,7 @@
                                 <span class="link-url">reddit.com/user/tavangarx</span>
                             </a>
                             <a href="https://flipboard.com/@tavangarx" class="link-item" target="_blank">
-                                <div class="link-icon"><i class="fas fa-flip-horizontal"></i></div>
+                                <div class="link-icon"><i class="fab fa-flipboard"></i></div>
                                 <span class="link-text">Flipboard</span>
                                 <span class="link-url">flipboard.com/@tavangarx</span>
                             </a>
@@ -600,11 +586,6 @@
                                 <div class="link-icon"><i class="fas fa-file-alt"></i></div>
                                 <span class="link-text">Scribd</span>
                                 <span class="link-url">scribd.com</span>
-                            </a>
-                            <a href="https://slideshare.net/tavangarx" class="link-item" target="_blank">
-                                <div class="link-icon"><i class="fas fa-presentation"></i></div>
-                                <span class="link-text">SlideShare</span>
-                                <span class="link-url">slideshare.net/tavangarx</span>
                             </a>
                             <a href="https://talkmarkets.com/member/tavangarx" class="link-item" target="_blank">
                                 <div class="link-icon"><i class="fas fa-comments-dollar"></i></div>
@@ -694,11 +675,6 @@
                     </div>
                     <div class="links-container">
                         <div class="links-grid">
-                            <a href="https://youtube.com/@tavangarx" class="link-item" target="_blank">
-                                <div class="link-icon"><i class="fab fa-youtube"></i></div>
-                                <span class="link-text">YouTube</span>
-                                <span class="link-url">youtube.com/@tavangarx</span>
-                            </a>
                             <a href="https://twitch.tv/tavangarx" class="link-item" target="_blank">
                                 <div class="link-icon"><i class="fab fa-twitch"></i></div>
                                 <span class="link-text">Twitch</span>
@@ -708,11 +684,6 @@
                                 <div class="link-icon"><i class="fab fa-vimeo"></i></div>
                                 <span class="link-text">Vimeo</span>
                                 <span class="link-url">vimeo.com/tavangarx</span>
-                            </a>
-                            <a href="https://soundcloud.com/tavangarx" class="link-item" target="_blank">
-                                <div class="link-icon"><i class="fab fa-soundcloud"></i></div>
-                                <span class="link-text">SoundCloud</span>
-                                <span class="link-url">soundcloud.com/tavangarx</span>
                             </a>
                             <a href="https://unsplash.com/@tavangarx" class="link-item" target="_blank">
                                 <div class="link-icon"><i class="fas fa-camera"></i></div>
@@ -753,12 +724,12 @@
                     </div>
                 </div>
 
-                <!-- Podcast Platforms -->
+                <!-- Podcast & Audio -->
                 <div class="category">
                     <div class="category-header">
                         <h2 class="category-title">
                             <span class="category-icon podcast"><i class="fas fa-podcast"></i></span>
-                            Podcast Platforms
+                            Podcast & Audio
                         </h2>
                     </div>
                     <div class="links-container">
@@ -767,6 +738,16 @@
                                 <div class="link-icon"><i class="fas fa-home"></i></div>
                                 <span class="link-text">Podcast Website</span>
                                 <span class="link-url">podcast.tavangarx.com</span>
+                            </a>
+                            <a href="https://youtube.com/@tavangarx" class="link-item" target="_blank">
+                                <div class="link-icon"><i class="fab fa-youtube"></i></div>
+                                <span class="link-text">YouTube</span>
+                                <span class="link-url">youtube.com/@tavangarx</span>
+                            </a>
+                            <a href="https://soundcloud.com/tavangarx" class="link-item" target="_blank">
+                                <div class="link-icon"><i class="fab fa-soundcloud"></i></div>
+                                <span class="link-text">SoundCloud</span>
+                                <span class="link-url">soundcloud.com/tavangarx</span>
                             </a>
                             <a href="https://open.spotify.com/show/5UeRhieGIOSufUBs2HAZmL" class="link-item" target="_blank">
                                 <div class="link-icon"><i class="fab fa-spotify"></i></div>
@@ -793,21 +774,16 @@
                                 <span class="link-text">Overcast</span>
                                 <span class="link-url">overcast.fm</span>
                             </a>
-                            <a href="https://pca.st/44p0b6y4" class="link-item" target="_blank">
-                                <div class="link-icon"><i class="fas fa-mobile-alt"></i></div>
-                                <span class="link-text">Pocket Casts</span>
-                                <span class="link-url">pca.st</span>
-                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Events & Networking -->
+                <!-- Events & Professional -->
                 <div class="category">
                     <div class="category-header">
                         <h2 class="category-title">
                             <span class="category-icon events"><i class="fas fa-calendar-week"></i></span>
-                            Events & Networking
+                            Events & Professional
                         </h2>
                     </div>
                     <div class="links-container">
@@ -817,35 +793,21 @@
                                 <span class="link-text">Luma Events</span>
                                 <span class="link-url">lu.ma/user/tavangarx</span>
                             </a>
-                            <a href="https://calendly.com/tavangarx" class="link-item" target="_blank">
-                                <div class="link-icon"><i class="fas fa-calendar-check"></i></div>
-                                <span class="link-text">Calendly</span>
-                                <span class="link-url">calendly.com/tavangarx</span>
-                            </a>
-                            <a href="https://xing.com/profile/MohammadHossein_Tavangar" class="link-item" target="_blank">
-                                <div class="link-icon"><i class="fab fa-xing"></i></div>
-                                <span class="link-text">Xing</span>
-                                <span class="link-url">xing.com</span>
-                            </a>
                             <a href="https://f6s.com/tavangarx" class="link-item" target="_blank">
                                 <div class="link-icon"><i class="fas fa-users"></i></div>
                                 <span class="link-text">F6S</span>
                                 <span class="link-url">f6s.com/tavangarx</span>
                             </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Digital Resources -->
-                <div class="category">
-                    <div class="category-header">
-                        <h2 class="category-title">
-                            <span class="category-icon resources"><i class="fas fa-link"></i></span>
-                            Digital Resources
-                        </h2>
-                    </div>
-                    <div class="links-container">
-                        <div class="links-grid">
+                            <a href="https://producthunt.com/@tavangarx" class="link-item" target="_blank">
+                                <div class="link-icon"><i class="fab fa-product-hunt"></i></div>
+                                <span class="link-text">Product Hunt</span>
+                                <span class="link-url">producthunt.com/@tavangarx</span>
+                            </a>
+                            <a href="https://github.com/tavangarx" class="link-item" target="_blank">
+                                <div class="link-icon"><i class="fab fa-github"></i></div>
+                                <span class="link-text">GitHub</span>
+                                <span class="link-url">github.com/tavangarx</span>
+                            </a>
                             <a href="https://tavangarx.notion.site" class="link-item" target="_blank">
                                 <div class="link-icon"><i class="fas fa-sticky-note"></i></div>
                                 <span class="link-text">Notion</span>
@@ -860,16 +822,6 @@
                                 <div class="link-icon"><i class="fas fa-user-circle"></i></div>
                                 <span class="link-text">About.me</span>
                                 <span class="link-url">about.me</span>
-                            </a>
-                            <a href="https://producthunt.com/@tavangarx" class="link-item" target="_blank">
-                                <div class="link-icon"><i class="fab fa-product-hunt"></i></div>
-                                <span class="link-text">Product Hunt</span>
-                                <span class="link-url">producthunt.com/@tavangarx</span>
-                            </a>
-                            <a href="https://github.com/tavangarx" class="link-item" target="_blank">
-                                <div class="link-icon"><i class="fab fa-github"></i></div>
-                                <span class="link-text">GitHub</span>
-                                <span class="link-url">github.com/tavangarx</span>
                             </a>
                         </div>
                     </div>
